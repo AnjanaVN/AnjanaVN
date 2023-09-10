@@ -1,0 +1,17 @@
+#include<stdio.h>
+void main()
+{
+int n1,n2,i,j,sum;
+printf("enter limits");
+scanf("%d%d",&n1,&n2);
+for(j=n1;j<=n2;j++)
+{
+    sum=0;
+for(i=1;i<j;i++)
+{
+if(j%i==0)
+sum=sum+i;
+}
+if(sum==j)
+printf("%d " ,j);
+}
