@@ -1,0 +1,23 @@
+#include<stdio.h>
+void main()
+{
+int n,d,i,j,f,c=0,sq,k,m,stat=0;
+printf("enter number");
+scanf("%d",&n);
+sq=n*n;
+printf("%d",sq);
+while(n>10 || sq>10)
+{
+d=n%10;
+k=sq%10;
+if(d==k)
+stat++;
+//if(d!=k)
+//stat--;//
+n=n/10;
+sq=sq/10;
+}
+if(stat>=1)
+printf("automorphic");
+else
+printf("not automorphic");
